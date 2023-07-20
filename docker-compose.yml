@@ -1,0 +1,26 @@
+version: "3"
+services:
+  movies:
+    image: jinkavenky567/movies.repo:latest
+    ports:
+      - 90:80
+    deploy:
+      replicas: 3
+  train:
+    image: jinkavenky567/train.repo:latest
+    ports:
+      - 91:80
+    deploy:
+      replicas: 3
+  dth:
+    image: jinkavenky567/dth.repo:latest
+    ports:
+      - 92:80
+    deploy:
+      replicas: 3
+  recharge:
+    image: jinkavenky567/recharge.repo:latest
+    ports:
+      - 93:80
+    deploy:
+      replicas: 3
