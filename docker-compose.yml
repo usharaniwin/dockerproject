@@ -15,7 +15,7 @@ services:
   recharge:
     image: devopsusharani/rechargerepo:latest
     ports:
-      - 93:80
+      - 92:80
     deploy:
       replicas: 3
   pandu:
@@ -27,7 +27,7 @@ services:
   surya:
     image: devopsusharani/suryarepo:latest
     ports:
-      - 93:80
+      - 94:80
     deploy:
       replicas: 3
   
