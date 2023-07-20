@@ -1,26 +1,33 @@
 version: "3"
 services:
-  movies:
-    image: jinkavenky567/movies.repo:latest
+  dth:
+    image: devopsusharani/dthrepo:latest
     ports:
       - 90:80
     deploy:
       replicas: 3
   train:
-    image: jinkavenky567/train.repo:latest
+    image: devopsusharani/trainrepo:latest
     ports:
       - 91:80
     deploy:
       replicas: 3
-  dth:
-    image: jinkavenky567/dth.repo:latest
-    ports:
-      - 92:80
-    deploy:
-      replicas: 3
   recharge:
-    image: jinkavenky567/recharge.repo:latest
+    image: devopsusharani/rechargerepo:latest
     ports:
       - 93:80
     deploy:
       replicas: 3
+  pandu:
+    image: devopsusharani/pandurepo:latest
+    ports:
+      - 93:80
+    deploy:
+      replicas: 3
+  surya:
+    image: devopsusharani/suryarepo:latest
+    ports:
+      - 93:80
+    deploy:
+      replicas: 3
+  
